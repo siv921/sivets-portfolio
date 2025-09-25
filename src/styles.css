@@ -1,0 +1,46 @@
+:root {
+    --main-font: "Arimo", sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #E8E5E1;
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 60px;
+     font-family: var(--main-font);
+     letter-spacing: 6px;
+     font-weight: 450;
+     background: #5D828C;
+background: radial-gradient(circle,rgba(93, 130, 140, 1) 0%, rgba(143, 169, 176, 1) 59%, rgba(87, 93, 88, 1) 100%);
+    background-clip: text;
+    color: transparent;
+
+
+
+
+}
+
+i {
+    font-size: 28px;
+    color: black;
+}
+p{
+    font-size: 30px;
+     font-family: var(--main-font);
+     color:#5D828C;
+
+
+}
+
+.navbar-light {
+    background-color: rgba(216, 213, 210, 0.5) !important;
+}
+
+.featured {
+    margin: 70px 70px;
+    text-align: left;
+    color: #4c6b72;
+}
