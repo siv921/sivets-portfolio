@@ -24,13 +24,16 @@ i {
     font-size: 28px;
     color: var(--primary-color);
 }
-h2{
+h2, p {
     font-size: 24px;
      font-family: var(--main-font);
      color:var(--primary-color);
      font-weight: 100;
      letter-spacing: 2px;
     
+}
+p{
+    font-size: 18px;
 }
 .navbar-light {
     background-color: var(--background-color) !important;
@@ -89,9 +92,7 @@ color: var(--secondary-color);
 }
 
 
-.about-me {
-    padding-top: 70px;
-}
+
 
 @media (max-width: 800px) {
 
@@ -105,4 +106,9 @@ color: var(--secondary-color);
         padding: 90px 0 50px 0 ;
     }
    
+}
+
+.about, .projects {
+    background-color: var(--background-color);
+    margin-top: 80px;
 }
