@@ -14,22 +14,17 @@ h1 {
     font-family: var(--main-font);
     letter-spacing: 6px;
     font-weight: 450;
-     background: var(--primary-color);
-
+    background: var(--primary-color);
     background: radial-gradient(circle,rgba(93, 130, 140, 1) 0%, rgba(143, 169, 176, 1) 59%, rgba(87, 93, 88, 1) 100%);
     background-clip: text;
     color: transparent;
-   
 }
 
-h2 {
-    color:var(--primary-color);
-}
 i {
     font-size: 28px;
     color: var(--primary-color);
 }
-p{
+h2{
     font-size: 24px;
      font-family: var(--main-font);
      color:var(--primary-color);
@@ -63,11 +58,6 @@ p{
 .btn-light {
     background-color: var(--background-color) !important;
     padding: 10px 20px !important;
-}
-
-.container-adjust{
-    max-width: fluid;
-    margin-bottom: 100px;
 }
 
 .homepage i {
@@ -104,6 +94,13 @@ color: var(--secondary-color);
 }
 
 @media (max-width: 800px) {
+
+    h1{ 
+    font-size: 50px;
+    }
+    h2{
+        font-size: 20px;
+    }
     .homepage {
         padding: 0;
         padding-top: 60px;
