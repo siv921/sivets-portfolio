@@ -102,8 +102,7 @@ color: var(--secondary-color);
         font-size: 20px;
     }
     .homepage {
-        padding: 0;
-        padding-top: 60px;
+        padding: 90px 0 50px 0 ;
     }
    
 }
