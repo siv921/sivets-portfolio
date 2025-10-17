@@ -1,28 +1,31 @@
 :root {
-   --primary-color: rgba(206, 92, 82, 1);
-    --secondary-color:rgba(206, 92, 82, 0.7);
-    --tertiary-color:rgb(165, 129, 84);
-;    --background-color: #E8E5E1; 
+    --primary-color: rgba(22, 22, 22, 0.7);
+    --secondary-color:rgba(22, 22, 22, 0.5);
+;    --background-color: rgba(232, 214, 252, 0.2);
     --main-font: "Archivo Black", sans-serif;
+    --second-font: "Roboto Flex", sans-serif;
 }
 
 body {
     text-align: center;
-    background-color: var(--background-color);
+
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-family: var(--main-font);
     letter-spacing: 6px;
     font-weight: 450;
-    color: var(--primary-color);
-   text-shadow: #E1B278 1px 0 10px;
-   
+    color:rgba(38, 32, 25, 0.85);  
 }
 
 .homepage h1 {
-    font-size: 85px;
+    font-size:68px;
+    transition: all 100ms ease-in-out;
+}
+
+.homepage h1:hover {
+    color:rgb(89, 79, 78);
 }
 
 i {
@@ -32,64 +35,27 @@ i {
 h2, p {
     font-size: 24px;
     font-family: var(--main-font);
-     color:var(--primary-color);
-     font-weight: 100;
-     letter-spacing: 2px;
-   text-shadow: #E1B278 1px 0 6px;
-     
-    
-    
-}
-p{
-    font-size: 18px;
-}
-.navbar-light {
-   background-color: rgba(255,255,255, 0) !important;
+    color:var(--primary-color);
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 
-
-.navbar-brand {
- color:var(--primary-color);
-}
-
-
-.navbar a {
-    color: var(--primary-color) !important;
-font-family: "Roboto Flex", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 750;
-  font-style: normal;
-  text-shadow: #E1B278 1px 0 10px;
+.homepage h2 {
+    text-shadow: rgb(232, 214, 252) 1px 0 10px;
 
 }
 
 .homepage {
+    background-color: var(--background-color);
+    padding: 115px 160px 105px 140px;
+    transition: all 200ms ease-out;
+    margin-top:55px;
+}   
 
-background-image: url("/images/rust.jpg");
-
-      
-
-    background-color: rgba(255,255,255,0.3);
-        background-blend-mode: lighten;
-
-       padding: 145px 160px 105px 140px;
-       transition: all 200ms ease-out;
-}
-
-.homepage:hover {
-
-    background-image: url("/images/rust.jpg");
-        background-color: rgba(255,255,255,0.5);
-        background-blend-mode: lighten;
-}
-
-.btn-light {
-    padding: 12px 27px !important;
-}
 
 .homepage i {
-font-size: 20px;
-color: var(--primary-color);
+    font-size: 20px;
+    color: var(--primary-color);
 
 }
 
@@ -103,47 +69,74 @@ color: var(--primary-color);
     color: #ce4b44;
 }
 
+.navbar-light {
+    background-color: white !important;
+}
+
+
+.navbar-brand {
+    color:var(--primary-color);
+}
+
+.navbar a {
+    color: var(--primary-color) !important;
+    font-family: var(--second-color) !important;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+
+
+
+}
+
+.btn-light {
+    padding: 12px 27px !important;
+}
+
+p{
+    font-size: 18px;
+}
+
 .featured {
-    font-size: 30px;
+    font-size: 28px;
     font-family: var(--main-font);
-    font-weight: 200;
     padding-bottom: 30px;
     margin: 70px 70px;
     text-align: left;
     color: var(--primary-color);
-  text-shadow: 0.5px 0.5px 1px pink;
 
 }
 
 .row a{
-    color: var(--primary-color);
-   font-family: "Roboto Flex", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 550;
-  font-style: normal;
+    color: var(--secondary-color);
+    font-family: var(--second-font) !important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: var(--background-color);
+
 }
 
 
 @media (max-width: 800px) {
 
     h1{ 
-    font-size: 45px;
+        font-size: 45px;
     }
-    h2{
-        font-size: 20px;
+    h2, featured{
+        font-size: 18px;
     }
     .homepage {
-        padding: 100px 0 50px 0 ;
+        padding: 50px 0 50px 0 ;
     }
 
     .homepage h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
    
 }
 
 .about, .projects {
-    background-color: var(--background-color);
     margin-top: 80px;
 }
 
