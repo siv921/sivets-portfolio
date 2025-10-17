@@ -114,24 +114,6 @@ h2, p {
 }
 
 
-@media (max-width: 800px) {
-
-    h1{ 
-        font-size: 45px;
-    }
-    h2, featured{
-        font-size: 18px;
-    }
-    .homepage {
-        padding: 50px 0 50px 0 ;
-    }
-
-    .homepage h1 {
-        font-size: 32px;
-    }
-   
-}
-
 .page .navbar-light {
     background-color: var(--background-color) !important;
 }
@@ -173,4 +155,28 @@ footer {
 
 .project {
     margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+
+    h1{ 
+        font-size: 45px;
+    }
+    h2, featured{
+        font-size: 18px;
+    }
+    .homepage {
+        padding: 50px 0 50px 0 ;
+    }
+
+    .homepage h1 {
+        font-size: 32px;
+    }
+   
+    .about {
+        margin-top: 0;
+    }
+    .description {
+        margin-left: 0;
+    }
 }
