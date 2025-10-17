@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgba(22, 22, 22, 0.7);
     --secondary-color:rgba(22, 22, 22, 0.5);
-;    --background-color: rgba(232, 214, 252, 0.2);
+;    --background-color: #FAF7FE;
     --main-font: "Archivo Black", sans-serif;
     --second-font: "Roboto Flex", sans-serif;
 }
@@ -12,14 +12,13 @@ body {
 }
 
 h1 {
-    font-size: 40px;
     font-family: var(--main-font);
     letter-spacing: 6px;
-    font-weight: 450;
-    color:rgba(38, 32, 25, 0.85);  
+    font-weight: 450; 
 }
 
 .homepage h1 {
+    color:rgba(38, 32, 25, 0.85); 
     font-size:68px;
     transition: all 100ms ease-in-out;
 }
@@ -84,17 +83,14 @@ h2, p {
     font-optical-sizing: auto;
     font-weight: 750;
     font-style: normal;
+}
 
-
-
+.active {
+    color: blue !important;
 }
 
 .btn-light {
     padding: 12px 27px !important;
-}
-
-p{
-    font-size: 18px;
 }
 
 .featured {
@@ -136,8 +132,18 @@ p{
    
 }
 
-.about, .projects {
-    margin-top: 80px;
+.page .navbar-light {
+    background-color: var(--background-color) !important;
+}
+
+.about h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+
+
+}
+.about .row {
+    margin: 100px 0 60px 0;
 }
 
 .about h2{
@@ -146,14 +152,25 @@ p{
     font-size: 40px;
 }
 
-.description {
-    padding: 60px 30px;
+p {
+    font-size: 18px;
+    color: var(--secondary-color);
 }
-
-.about .container {
-    max-width: 1000px;
+.description {
+    margin-top: 30px;
+    margin-left: 80px;
 }
 
 footer {
-    margin: 60px 30px;
+    margin: 10px 0 70px 0;
+    padding: 1px 0 50px 0;
+    background-color: var(--background-color);
+}
+
+.about img {
+    max-height: 350px;
+}
+
+.project {
+    margin-top: 60px;
 }
