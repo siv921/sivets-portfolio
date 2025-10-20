@@ -13,8 +13,8 @@ body {
 
 h1 {
     font-family: var(--main-font);
-    letter-spacing: 6px;
-    font-weight: 350; 
+    letter-spacing: 5px;
+    font-weight: 500; 
 }
 
 .homepage h1 {
@@ -58,7 +58,7 @@ h2, p {
 
 }
 
-.homepage a {
+/* .homepage a {
     font-family: var(--main-font);
     color: var(--primary-color);
     letter-spacing: 1.2px;
@@ -66,7 +66,7 @@ h2, p {
 
 .homepage a:hover {
     color: #ce4b44;
-}
+} */
 
 .navbar-light {
     background-color: white !important;
@@ -94,7 +94,7 @@ h2, p {
 }
 
 .featured {
-    font-size: 28px;
+    font-size: 26px;
     font-family: var(--main-font);
     padding-bottom: 30px;
     margin: 70px 70px;
@@ -198,14 +198,18 @@ footer {
 
 @media (max-width: 800px) {
 
-    h1{ 
+   /*  h1{ 
         font-size: 45px;
+    } */
+    h2{
+        font-size: 16px;
     }
-    h2, featured{
+
+    .featured {
         font-size: 18px;
     }
     .homepage {
-        padding: 50px 0 50px 0 ;
+        padding: 55px 0 50px 0 ;
     }
 
     .homepage h1 {
@@ -217,5 +221,8 @@ footer {
     }
     .description {
         margin-left: 0;
+    }
+    .hero footer {
+        margin-top: 50px;
     }
 }
