@@ -37,7 +37,6 @@ h2, p {
 
 .homepage h2 {
     text-shadow: rgb(232, 214, 252) 1px 0 10px;
-
 }
 
 .homepage {
@@ -47,17 +46,14 @@ h2, p {
     margin-top:55px;
 }   
 
-
 .homepage i {
     font-size: 20px;
     color: var(--primary-color);
-
 }
 
 .navbar-light {
     background-color: white !important;
 }
-
 
 .navbar-brand {
     color:var(--primary-color);
@@ -69,10 +65,6 @@ h2, p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.active {
-    text-decoration: underline;
 }
 
 .btn-light {
@@ -91,7 +83,6 @@ h2, p {
     margin: 70px 70px;
     text-align: left;
     color: var(--primary-color);
-
 }
 
 .row a{
@@ -100,6 +91,28 @@ h2, p {
     font-optical-sizing: auto;
     font-weight: 400;
     background-color: var(--background-color);
+}
+
+.hero i {
+    font-size: 24px;
+}
+
+.hero img {
+    background-color: var(--background-color);
+    padding: 25px 40px;
+    border-radius: 8px;
+
+}
+
+.hero footer {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 img {
@@ -116,9 +129,8 @@ transform: scale(1.1);
 .page h1 {
     color: var(--primary-color);
     font-size: 40px;
-
-
 }
+
 .about .row {
     margin: 90px 0 60px 0;
 }
@@ -148,30 +160,9 @@ footer {
     max-height: 350px;
 }
 
-.hero footer {
-    background-color: white;
-    margin-bottom: 0;
-}
-
-.hero p {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
 .showcase p {
     font-weight: 400;
     letter-spacing: 1.2px;
-}
-.hero i {
-    font-size: 24px;
-}
-
-.hero img {
-    background-color: var(--background-color);
-    padding: 25px 40px;
-    border-radius: 8px;
-
 }
 
 footer a {
@@ -185,6 +176,10 @@ footer i:hover, footer a:hover {
 
 .about footer {
     transform: scale(1.1);
+}
+
+.active {
+    text-decoration: underline;
 }
 @media (max-width: 800px) {
 
@@ -212,4 +207,17 @@ footer i:hover, footer a:hover {
     .hero footer {
         margin-top: 50px;
     }
+     .my-photo-phone {
+        display: block;
+    }
+    .large {
+        display: none;
+    }
+
+
+}
+
+
+.my-photo-phone {
+    display: none;
 }
