@@ -2,8 +2,8 @@
     --primary-color: rgba(22, 22, 22, 0.7);
     --secondary-color:rgba(22, 22, 22, 0.5);
 ;    --background-color: #FAF7FE;
-    --main-font: "Archivo Black", sans-serif;
-    --second-font: "Roboto Flex", sans-serif;
+    --main-font: "Rubik", sans-serif;;
+    --second-font:  "Rubik", sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 h1 {
     font-family: var(--main-font);
     letter-spacing: 6px;
-    font-weight: 450; 
+    font-weight: 350; 
 }
 
 .homepage h1 {
@@ -79,9 +79,9 @@ h2, p {
 
 .navbar a {
     color: var(--primary-color) !important;
-    font-family: var(--second-color) !important;
+    font-family: var(--second-font) !important;
     font-optical-sizing: auto;
-    font-weight: 750;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -118,14 +118,14 @@ h2, p {
     background-color: var(--background-color) !important;
 }
 
-.about h1 {
+.page h1 {
     color: var(--primary-color);
     font-size: 40px;
 
 
 }
 .about .row {
-    margin: 100px 0 60px 0;
+    margin: 90px 0 60px 0;
 }
 
 .about h2{
@@ -154,7 +154,46 @@ footer {
 }
 
 .project {
-    margin-top: 60px;
+    margin-top: 100px;
+}
+
+.project .container {
+    margin-top: 50px;
+    margin-bottom:60px;
+}
+
+.project footer, .hero footer {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.project p, .hero p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.project-description {
+    font-family: var(--second-font);
+    font-weight: 500;
+    letter-spacing: 0.6;
+    padding-top: 15px;
+}
+
+.project button {
+    display: block;
+    text-align: center;
+    padding: 8px 30px;
+    margin: 15px auto 30px;
+    border-radius:12px;
+    font-family: var(--second-font);
+    border: none;
+    color: var(--primary-color);
+}
+
+.project button:hover {
+    color: var(--secondary-color);
+    background-color:var(--background-color);
 }
 
 @media (max-width: 800px) {
