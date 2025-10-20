@@ -3,7 +3,6 @@
     --secondary-color:rgba(22, 22, 22, 0.5);
 ;    --background-color: #FAF7FE;
     --main-font: "Rubik", sans-serif;;
-    --second-font:  "Rubik", sans-serif;
 }
 
 body {
@@ -18,14 +17,11 @@ h1 {
 }
 
 .homepage h1 {
-    color:rgba(38, 32, 25, 0.85); 
+    color:rgb(89, 79, 78);
     font-size:68px;
     transition: all 100ms ease-in-out;
 }
 
-.homepage h1:hover {
-    color:rgb(89, 79, 78);
-}
 
 i {
     font-size: 28px;
@@ -58,16 +54,6 @@ h2, p {
 
 }
 
-/* .homepage a {
-    font-family: var(--main-font);
-    color: var(--primary-color);
-    letter-spacing: 1.2px;
-}
-
-.homepage a:hover {
-    color: #ce4b44;
-} */
-
 .navbar-light {
     background-color: white !important;
 }
@@ -79,18 +65,23 @@ h2, p {
 
 .navbar a {
     color: var(--primary-color) !important;
-    font-family: var(--second-font) !important;
+    font-family: var(--main-font) !important;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
 .active {
-    color: blue !important;
+    text-decoration: underline;
 }
 
 .btn-light {
     padding: 12px 27px !important;
+}
+
+.btn-light:hover{
+    color: var(--secondary-color) !important;
+    background-color: white !important;
 }
 
 .featured {
@@ -105,14 +96,18 @@ h2, p {
 
 .row a{
     color: var(--secondary-color);
-    font-family: var(--second-font) !important;
+    font-family: var(--main-font) !important;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 400;
     background-color: var(--background-color);
-
 }
 
+img {
+    transition: transform 400ms;
+}
+img:hover {
+transform: scale(1.1);
+}
 
 .page .navbar-light {
     background-color: var(--background-color) !important;
@@ -131,7 +126,7 @@ h2, p {
 .about h2{
     margin-top: 60px;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 p {
@@ -153,54 +148,46 @@ footer {
     max-height: 350px;
 }
 
-.project {
-    margin-top: 100px;
-}
-
-.project .container {
-    margin-top: 50px;
-    margin-bottom:60px;
-}
-
-.project footer, .hero footer {
+.hero footer {
     background-color: white;
     margin-bottom: 0;
 }
 
-.project p, .hero p {
+.hero p {
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-.project-description {
-    font-family: var(--second-font);
-    font-weight: 500;
-    letter-spacing: 0.6;
-    padding-top: 15px;
+.showcase p {
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+.hero i {
+    font-size: 24px;
 }
 
-.project button {
-    display: block;
-    text-align: center;
-    padding: 8px 30px;
-    margin: 15px auto 30px;
-    border-radius:12px;
-    font-family: var(--second-font);
-    border: none;
+.hero img {
+    background-color: var(--background-color);
+    padding: 25px 40px;
+    border-radius: 8px;
+
+}
+
+footer a {
+    text-decoration: none;
     color: var(--primary-color);
 }
 
-.project button:hover {
+footer i:hover, footer a:hover {
     color: var(--secondary-color);
-    background-color:var(--background-color);
 }
 
+.about footer {
+    transform: scale(1.1);
+}
 @media (max-width: 800px) {
 
-   /*  h1{ 
-        font-size: 45px;
-    } */
     h2{
         font-size: 16px;
     }
