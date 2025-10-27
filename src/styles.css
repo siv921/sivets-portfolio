@@ -106,7 +106,9 @@ h2, p {
 
 .hero footer {
     background-color: white;
+    padding-top: 50px;
     margin-bottom: 0;
+    
 }
 
 .hero p {
